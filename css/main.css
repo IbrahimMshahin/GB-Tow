@@ -1,0 +1,388 @@
+* { 
+    margin: 0%;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Start Header */
+
+.header { 
+    background-image: url(../imgs/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.bg-dark { 
+    background-color: rgba(0, 0, 0, 0.322) !important;
+}
+
+.home-layer { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    
+}
+
+.navbar { 
+    z-index: 2;
+}
+
+.home-layer .fw-bolder { 
+    font-size: 60px !important;
+}
+
+.active { 
+    color: #ffc107 !important;
+}
+
+.nav-link:hover { 
+    color: #ffc107 !important;
+}
+
+.hd-content { 
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 35px;
+    margin-left: 15px;
+    transition: 0.5s all;
+}
+
+.hd-content p { 
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: large;
+}
+.hd-content i { 
+    text-align: center;
+}
+
+.hd-content:hover { 
+    border: 2px solid #ffc107;
+}
+/* End Header */
+
+/* Start about */
+    .right-about h5 {
+        font-size: medium !important;
+    }
+
+/* End about */
+
+/* Start Features */
+
+/* End Features */
+
+
+/* Strat Sevices */
+
+.start-sections h6::after { 
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    width: 100px;
+    left: 95px;
+    background-color: #ffc107;
+}
+
+.content-services .content-cards .bg-warning { 
+    background-color: #ffc451 !important;
+    border-radius: 4px;
+}
+
+.content-services .content-cards { 
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    padding: 50px;
+    transition: 0.5s all;
+}
+
+.content-services .content-cards:hover { 
+    /* transform: scale(1.1); */
+    transform: translateY(-10px);
+    box-shadow:1px 0px 10px 2px rgb(0 0 0 / 21%);
+}
+/* End Sevices */
+
+/* Start buttom Call To Action */
+
+.buttom-action { 
+    background-image: url(../imgs/cta-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-layer { 
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.btn-outline-warning { 
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.btn-outline-warning:hover { 
+    background-color: #ffc451 !important;
+    color: black !important;
+    border: 1px solid #ffc451 !important ;
+}
+/* End buttom Call To Action */
+
+/* Start Portfolio */
+
+/* Start Carousal */
+.background-carousal { 
+    background-image: url(../imgs/testimonials-bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.layer-for-background-carousal {    
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+
+
+/* .carousel-item img { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10% !important;
+} */
+
+.content-layer-portfolio img { 
+    width: 7% !important;
+    border: 5px solid rgba(128, 128, 128, 0.397);
+}
+
+.for-edt { 
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+/* End Carousal */
+/* End Portfolio */
+
+/* Start Team */
+
+    .img-team img { 
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        box-shadow:1px 0px 10px 2px rgb(0 0 0 / 21%); 
+        transition: 0.5s all;
+    }
+
+    .text-team { 
+        box-shadow:1px 0px 10px 2px rgb(0 0 0 / 21%);
+    }
+
+    .img-team .social-team { 
+        top: 75%;
+        /* transform: translateY(-50%); */
+        font-size: larger;
+        font-weight: bolder;
+        /* background-color: #ffc107; */
+        /* margin-left: 15px; */
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .member-team:hover .social-team { 
+        opacity: 1;
+        transition: 0.5s all;
+    }
+
+/* End Team */
+
+/* Start Contact US */
+
+.contact-us .info-for-contact .location .text-dark { 
+    background-color: #ffc451 !important;
+    border-radius: 6px;
+    padding: 10px !important;
+    transform: translateY(25px);
+}
+
+.contact-us .info-for-contact .email .text-dark { 
+    background-color: #ffc451 !important;
+    border-radius: 6px;
+    padding: 10px !important;
+    transform: translateY(45px);
+}
+
+.contact-us .info-for-contact .call .text-dark { 
+    background-color: #ffc451 !important;
+    border-radius: 6px;
+    padding: 10px !important;
+    transform: translateY(45px);
+}
+
+.button-send button { 
+    background-color: #ffc451 !important;
+
+}
+/* End Contact US */
+
+/* Satrt Footer */
+
+    footer div {
+        background-color: #ffc451;
+    }
+
+/* End Footer */
+
+/* Start media query */
+
+/* Satrt Extra small devices (phones, 600px and down) and Medium devices */
+@media ( max-width : 768px) {
+
+    /* Start Header */
+    
+    .home-layer {
+        background-color: rgba(0, 0, 0, 0.87)!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1366px;
+    }
+
+    .home-layer .media-1 { 
+        margin-top: 50%;
+    }
+
+    .home-layer .fw-bolder ,
+    .home-layer p{
+        font-size: medium !important;
+    }
+
+    .header { 
+        height: 1366px;
+    }
+
+    .hd-home{ 
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .hd-content {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .navbar-collapse {
+        background-color: #41464b;
+        padding-left: 10px;
+        padding-bottom: 14px;
+    
+    }
+    /* End Header */
+
+    /* Start About */
+    .about .about-text h1 {
+        font-size: medium ;
+        font-weight: bold !important;
+    }
+    /* End About */
+
+    /* Start Features */
+
+    .features .media-2 {
+        margin-top: 30px;
+    }
+
+    .features .text-feature h4 {
+        font-size: medium;
+    }
+
+    /* End Features */
+
+    /* Start Portfolio */
+
+        .portfolio .counts-portfolio .media-3 {
+            margin-top: 30px;
+        }
+
+
+        .content-layer-portfolio img {
+            width: 30% !important;
+        }
+
+    /* End Portfolio */
+
+    /* Start Team  */
+
+        .team .content-team .member-team { 
+            margin-bottom: 20px;
+        }
+
+    /* End Team */
+}
+/* End Extra small devices (phones, 600px and down) */
+
+/* Sart Large devices (laptops/desktops, 992px and up) and Medium devices */
+@media ( max-width : 999px  ) and ( min-width : 769px ) {
+
+    .header .hd-home {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header .hd-content {
+        margin-bottom: 20px;
+    }
+
+    /* Satrt About */
+
+    .about .about-text p {
+        display: none;
+    }
+
+    .content-layer-portfolio img {
+        width: 13% !important;
+    }
+    /* End About */
+
+    /*  Satrt Team  */
+    .team .row {
+        justify-content: space-around;
+    }
+
+    .team .content-team .member-team {
+        flex: 0 0 auto;
+        width: 34%;
+        margin-bottom: 20px; 
+    }
+    /*  End Team  */
+
+
+    /* Strat Features  */
+
+        .features .container .medai-4 { 
+            display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        }
+
+    /* End Features  */
+
+
+    /* Satrt Portfolio */
+
+        .portfolio .container .media-5 { 
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+
+    /* End Portfolio */
+
+
+}
+/* End Large devices (laptops/desktops, 992px and up) */
